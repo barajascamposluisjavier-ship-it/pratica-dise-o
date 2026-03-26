@@ -155,7 +155,7 @@ table { width: 100%; border-collapse: collapse; font-size: 14px; }
 
 /* header naranja que llego de la nada */
 thead th {
-  background-color: #e8a030;
+  background-color: #3f30e8;
   color: #fff8ee;
   padding: 9px 14px;
   text-align: left;
@@ -190,7 +190,7 @@ tbody tr:nth-child(even) { background-color: #f0f5fb; }
 
 /* botones naranja + rojo que no van con nada */
 .campo button {
-  background-color: #e8a030;
+  background-color: #3036e8;
   color: white;
   border: none;
   padding: 9px 18px;
