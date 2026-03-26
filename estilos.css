@@ -1,4 +1,4 @@
-/* estilos.css - mi pagina web */
+/* estilos.css - limpio y corregido */
 
 * { box-sizing: border-box; }
 
@@ -23,21 +23,21 @@ body {
   z-index: 10;
 }
 
-/* logo */
 #logo {
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
 
-/* links navbar */
+/* 🔥 TOUCH TARGET FIX */
 #nav-links a {
   color: #ffffff;
   text-decoration: none;
   margin-left: 18px;
   font-size: 15px;
-  padding: 5px 8px;
+  padding: 10px 14px; /* aumentado */
   border-radius: 3px;
+  display: inline-block;
 }
 
 #nav-links a:hover {
@@ -50,24 +50,30 @@ body {
   background-color: #1e4d78;
   color: white;
   text-align: center;
-  padding: 50px 20px 20px 60px; /* padding asimetrico */
+  padding: 50px 20px 20px 60px;
   border-bottom: 4px solid #1a3f5f;
 }
 
 #hero h1 { font-size: 32px; margin-bottom: 10px; }
 
+/* 🔥 CONTRASTE FIX */
 #hero p {
   font-size: 16px;
-  color: #a0c0e0;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
-/* boton hero */
+/* 🔥 BOTONES MÁS GRANDES */
+button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 16px;
+}
+
 #hero button {
   background-color: white;
   color: #1e4d78;
   border: 1px solid #2a7fba;
-  padding: 10px 22px;
   font-size: 15px;
   cursor: pointer;
   border-radius: 4px;
@@ -75,7 +81,6 @@ body {
 }
 
 /* ---- CONTENIDO ---- */
-/* margen izquierdo raro, no esta centrado del todo */
 #contenido {
   max-width: 860px;
   margin: 25px auto;
@@ -90,7 +95,6 @@ section {
   margin-bottom: 20px;
 }
 
-/* titulos de seccion */
 section h2 {
   color: #2a5f8f;
   margin-top: 0;
@@ -104,21 +108,19 @@ hr {
 }
 
 /* ---- SOBRE MI ---- */
-.seccion-flex { display: flex; gap: 20px; align-items: flex-start; }
+.seccion-flex { display: flex; gap: 20px; }
 
-/* borde naranja que no pega con nada */
 #foto-perfil {
   border: 4px solid #e8a030;
   border-radius: 4px;
-  flex-shrink: 0;
 }
 
-/* ---- CARDS HOBBIES ---- */
+/* ---- CARDS ---- */
 #cards-hobbies { display: flex; gap: 12px; flex-wrap: wrap; }
 
 .card {
   background-color: #f8f8f8;
-  border: 1px solid #e8e8e8; /* borde casi invisible */
+  border: 1px solid #e8e8e8;
   border-radius: 5px;
   padding: 15px;
   width: 160px;
@@ -127,90 +129,71 @@ hr {
 
 .card-icono { font-size: 28px; margin-bottom: 6px; }
 
-.card p { font-size: 13px; color: #555555; margin: 5px 0 0; }
+.card p { font-size: 13px; color: #555; }
 
 /* ---- GALERIA ---- */
-#grid-galeria { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+#grid-galeria { display: flex; flex-wrap: wrap; gap: 10px; }
 
 .foto-caja {
-  border: 2px solid #aaaaaa;
+  border: 2px solid #aaa;
   background-color: #f0f0f0;
   padding: 6px;
   text-align: center;
-  border-radius: 3px;
 }
 
-.foto-caja img { display: block; }
-
-/* caption galeria */
 .foto-caja small {
   display: block;
   margin-top: 4px;
-  color: #555555;
-  font-size: 11px;
+  color: #555;
 }
 
 /* ---- TABLA ---- */
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+table { width: 100%; border-collapse: collapse; }
 
-/* header naranja que llego de la nada */
 thead th {
   background-color: #3f30e8;
-  color: #fff8ee;
+  color: #ffffff; /* contraste corregido */
   padding: 9px 14px;
-  text-align: left;
 }
 
-tbody td { padding: 8px 14px; border-bottom: 1px solid #dddddd; }
-tbody tr:nth-child(even) { background-color: #f0f5fb; }
+tbody td { padding: 8px 14px; }
 
 /* ---- FORMULARIO ---- */
 .campo { margin-bottom: 14px; }
 
-/* label en linea con input, queda desalineado */
 .campo label {
-  display: inline-block;
+  display: block; /* mejor accesibilidad */
   margin-bottom: 4px;
   font-weight: bold;
-  font-size: 14px;
-  width: 130px;
-  vertical-align: top;
-  margin-top: 8px;
 }
 
 .campo input,
 .campo textarea {
-  width: 55%; /* ancho raro */
+  width: 100%;
+  min-height: 44px; /* 🔥 touch fix */
   padding: 7px 9px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #aaa;
   border-radius: 3px;
-  font-size: 14px;
-  font-family: Arial;
 }
 
-/* botones naranja + rojo que no van con nada */
+/* botones */
 .campo button {
   background-color: #3036e8;
   color: white;
   border: none;
-  padding: 9px 18px;
-  font-size: 14px;
-  cursor: pointer;
+  padding: 10px 16px;
   border-radius: 4px;
   margin-right: 8px;
 }
 
-.btn-secundario { background-color: #cc4444 !important; }
+.btn-secundario { background-color: #cc4444; }
 
 /* ---- FOOTER ---- */
-/* footer */
 #pie {
   background-color: #1a3f5f;
   color: #ccddee;
   text-align: center;
   padding: 18px;
-  font-size: 13px;
-  margin-top: 10px;
 }
 
-#pie a { color: #88bbdd; text-decoration: none; }
+#pie a { color: #88bbdd; }
