@@ -58,8 +58,15 @@ body {
 
 #hero p {
   font-size: 16px;
-  color: #a0c0e0;
+  color: #ffffff;
   margin-bottom: 20px;
+}
+
+thead th {
+  background-color: #e8a030;
+  color: #000000;
+  padding: 9px 14px;
+  text-align: left;
 }
 
 /* boton hero */
