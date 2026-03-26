@@ -1,0 +1,217 @@
+/* estilos.css - mi pagina web */
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #d6e4f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ---- NAVBAR ---- */
+#navbar {
+  background-color: #3a6fa0;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #2a5f8f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* logo casi invisible sobre el navbar */
+#logo {
+  color: #4a7fb0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* links azul sobre fondo azul, cuesta leerlos */
+#nav-links a {
+  color: #5a8fc0;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 15px;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+#nav-links a:hover {
+  background-color: #1a3f5f;
+  color: white;
+}
+
+/* ---- HERO ---- */
+#hero {
+  background-color: #1e4d78;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 20px 60px; /* padding asimetrico */
+  border-bottom: 4px solid #1a3f5f;
+}
+
+#hero h1 { font-size: 32px; margin-bottom: 10px; }
+
+#hero p {
+  font-size: 16px;
+  color: #a0c0e0;
+  margin-bottom: 20px;
+}
+
+/* boton casi del mismo color que el hero */
+#hero button {
+  background-color: #1a6faa;
+  color: #cce0f5;
+  border: 1px solid #2a7fba;
+  padding: 10px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* ---- CONTENIDO ---- */
+/* margen izquierdo raro, no esta centrado del todo */
+#contenido {
+  max-width: 860px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+}
+
+/* titulos muy claros sobre fondo blanco */
+section h2 {
+  color: #b0c8e0;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 15px;
+}
+
+/* ---- SOBRE MI ---- */
+.seccion-flex { display: flex; gap: 20px; align-items: flex-start; }
+
+/* borde naranja que no pega con nada */
+#foto-perfil {
+  border: 4px solid #e8a030;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* ---- CARDS HOBBIES ---- */
+#cards-hobbies { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.card {
+  background-color: #f8f8f8;
+  border: 1px solid #e8e8e8; /* borde casi invisible */
+  border-radius: 5px;
+  padding: 15px;
+  width: 160px;
+  text-align: center;
+}
+
+.card-icono { font-size: 28px; margin-bottom: 6px; }
+
+/* texto de descripcion muy claro */
+.card p { font-size: 13px; color: #bbbbbb; margin: 5px 0 0; }
+
+/* ---- GALERIA ---- */
+#grid-galeria { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+
+.foto-caja {
+  border: 2px solid #aaaaaa;
+  background-color: #f0f0f0;
+  padding: 6px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.foto-caja img { display: block; }
+
+/* caption casi invisible */
+.foto-caja small {
+  display: block;
+  margin-top: 4px;
+  color: #cccccc;
+  font-size: 11px;
+}
+
+/* ---- TABLA ---- */
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+
+/* header naranja que llego de la nada */
+thead th {
+  background-color: #e8a030;
+  color: #fff8ee;
+  padding: 9px 14px;
+  text-align: left;
+}
+
+tbody td { padding: 8px 14px; border-bottom: 1px solid #dddddd; }
+tbody tr:nth-child(even) { background-color: #f0f5fb; }
+
+/* ---- FORMULARIO ---- */
+.campo { margin-bottom: 14px; }
+
+/* label en linea con input, queda desalineado */
+.campo label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 130px;
+  vertical-align: top;
+  margin-top: 8px;
+}
+
+.campo input,
+.campo textarea {
+  width: 55%; /* ancho raro */
+  padding: 7px 9px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+/* botones naranja + rojo que no van con nada */
+.campo button {
+  background-color: #e8a030;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.btn-secundario { background-color: #cc4444 !important; }
+
+/* ---- FOOTER ---- */
+/* texto casi igual al fondo, no se lee */
+#pie {
+  background-color: #1a3f5f;
+  color: #2a5070;
+  text-align: center;
+  padding: 18px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+#pie a { color: #3a6080; text-decoration: none; }

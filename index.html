@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Pagina Web :</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div id="logo">Carlos.dev 🌐</div>
+    <div id="nav-links">
+      <a href="#sobre-mi">Inicio</a>
+      <a href="#hobbies">Sobre Mi</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#horario">Horario</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero">
+    <h1>Bienvenidos a Mi Pagina!! :D</h1>
+    <p>Hola mi nombre es Carlos y esta es mi primer pagina web espero que les guste</p>
+    <button onclick="alert('gracias por visitar!!')">Conoceme mas</button>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div id="contenido">
+
+    <section id="sobre-mi">
+      <h2>Sobre Mi</h2>
+      <hr>
+      <div class="seccion-flex">
+        <img src="https://picsum.photos/seed/perfil/130/130" alt="foto de perfil" id="foto-perfil">
+        <p>Me llamo Carlos tengo 24 años y me gusta la programacion. Estoy aprendiendo HTML y CSS desde hace como 2 semanas. Tambien me gusta el futbol y los videojuegos. <b>Si quieres contactarme manda un correo.</b>
+        <br><br>
+        Soy de Guadalajara y estudio en las noches. De dia trabajo en una tienda pero en mis ratos libres me pongo a hacer paginitas como esta jaja.</p>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Mis Hobbies</h2>
+      <hr>
+      <div id="cards-hobbies">
+        <div class="card"><div class="card-icono">⚽</div><b>Futbol</b><p>Juego los sabados con mis cuates en el parque</p></div>
+        <div class="card"><div class="card-icono">🎮</div><b>Videojuegos</b><p>COD, FIFA, Minecraft. Lo que caiga</p></div>
+        <div class="card"><div class="card-icono">💻</div><b>Programar</b><p>Aprendiendo HTML y CSS por mi cuenta</p></div>
+        <div class="card"><div class="card-icono">📺</div><b>Series</b><p>Ver Netflix cuando ya no tengo tarea</p></div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <hr>
+      <p><i>(aqui van mis fotos favoritas)</i></p>
+      <div id="grid-galeria">
+        <div class="foto-caja"><img src="https://picsum.photos/seed/playa/220/160" alt="foto 1"><small>una foto bonita</small></div>
+        <div class="foto-caja"><img src="https://picsum.photos/seed/montana/220/160" alt="foto 2"><small>otra foto</small></div>
+        <div class="foto-caja"><img src="https://picsum.photos/seed/ciudad/220/160" alt="foto 3"><small>foto 3</small></div>
+        <div class="foto-caja"><img src="https://picsum.photos/seed/bosque/220/160" alt="foto 4"><small>foto del bosque</small></div>
+      </div>
+    </section>
+
+    <section id="horario">
+      <h2>Mi Horario de la Semana</h2>
+      <hr>
+      <table>
+        <thead><tr><th>Dia</th><th>Actividad</th><th>Hora</th></tr></thead>
+        <tbody>
+          <tr><td>Lunes</td><td>Clases de programacion</td><td>10:00am</td></tr>
+          <tr><td>Martes</td><td>Trabajo</td><td>9:00am</td></tr>
+          <tr><td>Miercoles</td><td>Gym (a veces)</td><td>7:00pm</td></tr>
+          <tr><td>Sabado</td><td>Futbol con los cuates</td><td>4:00pm</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto">
+      <h2>Contactame</h2>
+      <hr>
+      <p>Si tienes alguna pregunta o comentario escribeme aqui abajo:</p>
+      <div id="formulario">
+        <div class="campo"><label></label><input type="text" placeholder="escribe tu nombre"></div>
+        <div class="campo"><label></label><input type="text" placeholder="ejemplo@correo.com"></div>
+        <div class="campo"><label></label><textarea rows="5" placeholder="escribe tu mensaje aqui..."></textarea></div>
+        <div class="campo">
+          <button onclick="alert('Mensaje enviado!! Gracias :)')">Enviar Mensaje</button>
+          <button class="btn-secundario" onclick="alert('Limpiando...')">Limpiar</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="pie">
+    <p>hecho por Carlos | 2024 | todos los derechos reservados o algo asi</p>
+    <p><a href="#">subir al inicio ↑</a> &nbsp;|&nbsp; <a href="#">facebook</a> &nbsp;|&nbsp; <a href="#">instagram</a></p>
+  </footer>
+
+</body>
+</html>
